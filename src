@@ -1261,7 +1261,7 @@ mainPluto.Title1.BorderSizePixel = 0
 mainPluto.Title1.Position = UDim2.new(0.0125031592, 0, 0.0726711601, 0)
 mainPluto.Title1.Size = UDim2.new(0.10922996, 0, 0.081285581, 0)
 mainPluto.Title1.Font = Enum.Font.GothamSemibold
-mainPluto.Title1.Text = "Pluto, by shlex"
+mainPluto.Title1.Text = "Pluto, by Pluto"
 mainPluto.Title1.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainPluto.Title1.TextScaled = true
 mainPluto.Title1.TextSize = 14.000
@@ -2326,17 +2326,17 @@ WriteFileFixPlayers = {
 FeaturedExploits = {
 	barr = {
 		Name = "BarrierRemover",
-		Author = "shlex",
+		Author = "Pluto",
 		ImageID = 0,
 		Colour = Color3.fromRGB(0, 170, 127),
 		Code = "https://pastebin.com/raw/HqFgVGXn",
 	},
 	dmnv2 = {
 		Name = "Pluto Hub V2",
-		Author = "shlex",
+		Author = "Pluto",
 		ImageID = 0,
 		Colour = Color3.fromRGB(31, 31, 31),
-		Code = "https://raw.githubusercontent.com/shlexsoftworks/Pluto/main/source",
+		Code = "https://raw.githubusercontent.com/Plutosoftworks/Pluto/main/source",
 	},
 	CLOVR = {
 		Name = "CloVR",
@@ -2466,7 +2466,7 @@ function Start()
 		mainPluto.Toggle.Visible = false
 		mainPluto.PromptExploit.Visible = false
 		mainPluto.Players.Visible = false
-		Notify("You have been banned from using Pluto, Appeal in the Discord or by messaging Shlex")
+		Notify("You have been banned from using Pluto, Appeal in the Discord or by messaging Pluto")
 		wait(10)
 		mainPluto.mainPluto:Destroy()
 		else
@@ -3504,7 +3504,7 @@ game.Players.PlayerAdded:Connect(function(Player)
 	AddToList(Player)
 	if table.find(Developers,Player.UserId) then
 		wait(2)
-		Notify("Shlex has joined your server","GothamBold")
+		Notify("Pluto has joined your server","GothamBold")
 	end
 	if table.find(Admins,Player.UserId) then
 		wait(2)
@@ -3518,7 +3518,7 @@ function CheckPlayersForAdmins()
 	for _, Player in ipairs(game:GetService("Players"):GetChildren()) do
 		for _, Dev in ipairs(Developers) do
 			if Player.UserId == Dev then
-				mainPluto.Text_5.Text = "Shlex is in your server"
+				mainPluto.Text_5.Text = "Pluto is in your server"
 				vdev = true
 				break
 			end
